@@ -1,1 +1,5 @@
+{
+  "bot_token": "YOUR_BOT_TOKEN",
+  "api_url": "http://localhost:5000"
+}
 
