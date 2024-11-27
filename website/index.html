@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helper Bot Dashboard</title>
+  <link rel="stylesheet" href="../web_utils/main.css">
+  <link rel="stylesheet" href="../web_utils/theme.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Helper Bot Dashboard</h1>
+    <p>Manage your bot settings and monitor activity.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Bot Information</h2>
+      <p id="bot-status">Loading bot status...</p>
+    </section>
+
+    <section>
+      <h2>Custom Embed Builder</h2>
+      <form id="embed-form">
+        <label for="embed-title">Title:</label>
+        <input type="text" id="embed-title" name="title" placeholder="Enter title..." required>
+
+        <label for="embed-description">Description:</label>
+        <textarea id="embed-description" name="description" placeholder="Enter description..." required></textarea>
+
+        <label for="embed-color">Color (Hex):</label>
+        <input type="color" id="embed-color" name="color" value="#7289da" required>
+
+        <button type="submit">Send Embed</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Send Announcement</h2>
+      <form id="announcement-form">
+        <label for="announcement-message">Message:</label>
+        <textarea id="announcement-message" name="message" placeholder="Enter announcement message..." required></textarea>
+
+        <label for="announcement-delay">Delay (in seconds):</label>
+        <input type="number" id="announcement-delay" name="delay" value="0" required>
+
+        <button type="submit">Send Announcement</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
 
